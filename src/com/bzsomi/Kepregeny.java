@@ -15,8 +15,8 @@ public class Kepregeny {
             BufferedReader bf = new BufferedReader(fr);
             String sor = bf.readLine();
             while (sor != null){
-                String[] tomb = sor.split(";");
-                if (tomb[0] == "Batman"){
+                String[] tomb = sor.split(" ");
+                if (tomb[0].equals("Batman")){
                     Batman hos = new Batman();
                     for (int i = 0; i < Integer.parseInt(tomb[1]); i++) {
                         hos.kutyutKeszit();

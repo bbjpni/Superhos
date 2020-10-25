@@ -31,6 +31,6 @@ public abstract class Bosszuallo implements Szuperhos {
 
     @Override
     public String toString() {
-        return String.format("bosszúálló:\nSZUPERERŐ: %5.f\nGYENGESÉG %sismert", this.szuperero, this.vanEGyengeseg ? "" : "nem ");
+        return String.format("bosszúálló:\nSZUPERERŐ: %.5f\nGYENGESÉG %sismert", this.szuperero, this.vanEGyengeseg ? "" : "nem ");
     }
 }
