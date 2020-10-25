@@ -21,4 +21,9 @@ public class Batman implements Milliardos, Szuperhos {
     public double mekkoraAzEreje() {
         return 2*this.lelemenyesseg;
     }
+
+    @Override
+    public String toString() {
+        return "Batman\nLELEMÉNYESSÉG: " + lelemenyesseg;
+    }
 }
