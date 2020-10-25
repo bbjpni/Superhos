@@ -11,6 +11,14 @@ public abstract class Bosszuallo implements Szuperhos {
 
     public abstract boolean megmentiAVilagot();
 
+    public void setSzuperero(double szuperero) {
+        this.szuperero = szuperero;
+    }
+
+    public double getSzuperero() {
+        return szuperero;
+    }
+
     @Override
     public boolean legyoziE(Szuperhos hos) {
         return this.vanEGyengeseg && this.szuperero < hos.mekkoraAzEreje();
@@ -19,5 +27,10 @@ public abstract class Bosszuallo implements Szuperhos {
     @Override
     public double mekkoraAzEreje() {
         return this.szuperero;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("bosszúálló:\nSZUPERERŐ: %5.f\nGYENGESÉG %sismert", this.szuperero, this.vanEGyengeseg ? "" : "nem ");
     }
 }
